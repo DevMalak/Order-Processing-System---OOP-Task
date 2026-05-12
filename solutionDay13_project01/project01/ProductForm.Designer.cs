@@ -37,14 +37,16 @@
             btnAddProduct = new Button();
             lstProducts = new ListBox();
             btnNextToOrder = new Button();
+            label1 = new Label();
             SuspendLayout();
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(25, 88);
+            label3.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Location = new Point(2, 85);
             label3.Name = "label3";
-            label3.Size = new Size(84, 15);
+            label3.Size = new Size(133, 25);
             label3.TabIndex = 6;
             label3.Text = "Product Name";
             // 
@@ -58,9 +60,10 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label4.Location = new Point(34, 161);
             label4.Name = "label4";
-            label4.Size = new Size(33, 15);
+            label4.Size = new Size(54, 25);
             label4.TabIndex = 8;
             label4.Text = "Price";
             // 
@@ -74,9 +77,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(34, 227);
+            label5.Font = new Font("Segoe UI Historic", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.Location = new Point(34, 224);
             label5.Name = "label5";
-            label5.Size = new Size(53, 15);
+            label5.Size = new Size(84, 25);
             label5.TabIndex = 10;
             label5.Text = "Quantity";
             // 
@@ -89,12 +93,15 @@
             // 
             // btnAddProduct
             // 
+            btnAddProduct.BackColor = SystemColors.ControlDarkDark;
+            btnAddProduct.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddProduct.ForeColor = Color.FromArgb(64, 0, 0);
             btnAddProduct.Location = new Point(203, 284);
             btnAddProduct.Name = "btnAddProduct";
             btnAddProduct.Size = new Size(137, 39);
             btnAddProduct.TabIndex = 12;
             btnAddProduct.Text = "Add Product";
-            btnAddProduct.UseVisualStyleBackColor = true;
+            btnAddProduct.UseVisualStyleBackColor = false;
             btnAddProduct.Click += btnAddProduct_Click;
             // 
             // lstProducts
@@ -108,19 +115,35 @@
             // 
             // btnNextToOrder
             // 
+            btnNextToOrder.BackColor = SystemColors.ControlDarkDark;
+            btnNextToOrder.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNextToOrder.ForeColor = Color.FromArgb(64, 0, 0);
             btnNextToOrder.Location = new Point(592, 284);
             btnNextToOrder.Name = "btnNextToOrder";
             btnNextToOrder.Size = new Size(99, 39);
             btnNextToOrder.TabIndex = 15;
             btnNextToOrder.Text = "Next";
-            btnNextToOrder.UseVisualStyleBackColor = true;
+            btnNextToOrder.UseVisualStyleBackColor = false;
             btnNextToOrder.Click += btnNextToOrder_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(64, 0, 0);
+            label1.Location = new Point(283, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(281, 37);
+            label1.TabIndex = 16;
+            label1.Text = "Product Information";
             // 
             // ProductForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(800, 450);
+            Controls.Add(label1);
             Controls.Add(btnNextToOrder);
             Controls.Add(lstProducts);
             Controls.Add(btnAddProduct);
@@ -147,5 +170,6 @@
         private Button btnAddProduct;
         private ListBox lstProducts;
         private Button btnNextToOrder;
+        private Label label1;
     }
 }

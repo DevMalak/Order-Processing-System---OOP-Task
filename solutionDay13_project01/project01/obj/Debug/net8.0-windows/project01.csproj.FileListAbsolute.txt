@@ -16,3 +16,4 @@ C:\Users\user\Documents\solutions\solutionDay13_project01\project01\obj\Debug\ne
 C:\Users\user\Documents\solutions\solutionDay13_project01\project01\obj\Debug\net8.0-windows\project01.CustomerForm.resources
 C:\Users\user\Documents\solutions\solutionDay13_project01\project01\obj\Debug\net8.0-windows\project01.OrderForm.resources
 C:\Users\user\Documents\solutions\solutionDay13_project01\project01\obj\Debug\net8.0-windows\project01.ProductForm.resources
+C:\Users\user\Documents\solutions\solutionDay13_project01\project01\obj\Debug\net8.0-windows\project01.Properties.Resources.resources

@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-using System;
 
 namespace project01
 {
     public class Product
     {
+        
+        public string Id { get; set; } = Guid.NewGuid().ToString().Substring(0, 5).ToUpper();
+
         private string name;
         private double price;
         private int quantity;
@@ -42,6 +39,20 @@ namespace project01
                 if (value >= 0)
                     quantity = value;
             }
+        }
+        public virtual double CalculateDiscount()
+        {
+            return 0; 
+        }
+    }
+
+
+    public class ElectronicsProduct : Product
+    {
+        public override double CalculateDiscount()
+        {
+            // خصم 10% خاص بالإلكترونيات فقط
+            return Price * 0.1;
         }
     }
 }
